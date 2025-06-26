@@ -3,7 +3,7 @@ const fs = require("fs-extra");
 const path = require("path");
 
 const NUM_GUESTS = 50;          // total codes to print
-const BASE = "https://your-host"; // ← replace with your actual domain
+const BASE = "https://bakalov97.github.io/wedding-winner";
 const OUT = path.join(__dirname, "qr");
 
 async function main() {
