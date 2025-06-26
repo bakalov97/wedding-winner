@@ -1,28 +1,30 @@
+<!-- public/prize.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Your Prize</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
-  <h1>Your Prize</h1>
-  <div id="msg">Loading…</div>
-  <script>
-    (function(){
-      const prizes = [
-        "Shot of whiskey",
-        "Cigar",
-        "Candy bar",
-        "Dance with the bride & groom",
-        "Free photo booth strip"
-      ];
-      // pick one at random
-      const prize =
-        prizes[Math.floor(Math.random() * prizes.length)];
-      document.getElementById("msg").textContent =
-        "You won: " + prize + "!";
-    })();
-  </script>
+  <div class="container">
+    <h1>Няма да се жениш скоро май, но поне</h1>
+    <div id="msg">Loading…</div>
+    <script>
+      (function(){
+        const prizes = [
+          "Шот уиски",
+          "Шот водка",
+          "Пура",
+          "Ферари 1:20",
+          "Усмивка"
+        ];
+        const prize = prizes[Math.floor(Math.random() * prizes.length)];
+        document.getElementById("msg").textContent = "Печелиш: " + prize + "!";
+      })();
+    </script>
+    <footer>С обич, Елена & Иван </footer>
+  </div>
 </body>
 </html>
